@@ -1,37 +1,25 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-  }
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
 
-  .item{
-    background-color:red;
-    color:#FFFFFF;
-    margin: 10px;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    vertical-align: middle;
+.piece {
+  background: #00BBDD;
+  color: #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 3px;
+}
 
-  }
-
-  .pos-1  { order: 1; }
-  .pos-2  { order: 2; }
-  .pos-3  { order: 3; }
-  .pos-4  { order: 4; }
-  .pos-5  { order: 5; }
-  .pos-6  { order: 6; }
-  .pos-7  { order: 7; }
-  .pos-8  { order: 8; }
-  .pos-9  { order: 9; }
-  .pos-10 { order: 10; }
-  .pos-11 { order: 11; }
-  .pos-12 { order: 12; }
-  .pos-13 { order: 13; }
-  .pos-14 { order: 14; }
-  .pos-15 { order: 15; }
-  .pos-16 { order: 16; }
-
-  
+/* 空白に対応するピース (16 番) のみ白抜きする */
+.piece-16 {
+  visibility: hidden;
+}
